@@ -64,7 +64,7 @@ for filename in os.listdir(path):
             broken_files.append(filename)
             print(f'[-] {filename} is broken and has been moved to `{broken_dir}` directory\n')
         else:
-            # file contain valid records, so move it to `working` directory
+            # file contain valid records, so move it to `correct` directory
             shutil.move(file_path, correct_dir)
             correct_files.append(filename)
             print(f'[+] {filename} contains valid records and has been moved to `{correct_dir}` directory\n')
